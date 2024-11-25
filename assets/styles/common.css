@@ -17,35 +17,31 @@
   --font-family-ko : "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
 
-  --font-size-xxxxl: 2.987rem; /* 47.8px */ 
-  --font-size-xxxl: 2.487rem; /* 39.8px */
-  --font-size-xxl: 2.075rem; /* 33.2px */
-  --font-size-xl: 1.725rem; /* 27.6px */
-  --font-size-l: 1.438rem; /* 23px */
+  --font-size-xxxxxxl: 7.5rem; /* 120px */ 
+  --font-size-xxxxxl: 5.313rem; /* 85px */ 
+  --font-size-xxxxl: 4.25rem; /* 68px */ 
+  --font-size-xxxl: 2.625rem; /* 42px */
+  --font-size-xxl: 2rem; /* 32px */
+  --font-size-xl: 1.75rem; /* 28px */
+  --font-size-l: 1.5rem; /* 24px */
   --font-size-ml: 1.2rem; /* 19.2px */
   --font-size-m: 1rem; /*** 16px ***/
-  --font-size-ms: 0.831rem; /* 13.3px */
+  --font-size-ms: 0.875rem; /* 14px */
   --font-size-xs: 0.694rem; /* 11.1px */
-  --font-size-xxs: 0.606rem; /* 9.7px */
 
-  --color-dark1: #000000;
-  --color-dark2: #4f4f4f;
+  --color-dark1: #1D1D1D;
+  --color-dark2: #231815;
 
-  --color-gray1: #b1b1b1;
-  --color-gray2: #bbbbbb;
+  --color-gray1: #646464;
+  --color-gray2: #777777;
 
   --color-white1: #ffffff;
-  --color-white2: #f5f5f5;
-  --color-white3: #dddddd;
+  --color-white2: #EFEFEF;
   
-  --color-blue1: #0988f0;
-  --color-blue2: #f4f9ff;
+  --color-lightPurple: #F6F3FF;
+  --color-yellowGray: #EBEAE5;
 
-  --color-yellow1: #ffb800;
-  --color-yellow2: #fffbf2;
-
-
-
+  --color-yellow1: #FDF7CE;
 
   --line-height: 1.6;
 
@@ -75,13 +71,13 @@ html ::-webkit-scrollbar {
   width: 10px;
 }
 html ::-webkit-scrollbar-track {
-  background-color: var(--color-white1);
+  background-color: var(--color-white2);
 }
 html ::-webkit-scrollbar-thumb {
   background-color: var(--color-dark1);
   box-shadow: 0 1px 10px var(--color-white2);
   /* border: 1px solid var(--color-dark1); */
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .flex-container {
@@ -126,8 +122,8 @@ body {
 }
 
 
-/* 1020px 이상일 때 */
-@media (min-width:1020px) {
+/* 1400px 이상일 때 */
+@media (min-width:1400px) {
   /*
   :root { 
     --font-main-title-xxlg: 3.5rem;

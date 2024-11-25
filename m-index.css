@@ -2,4 +2,109 @@
 /* media="(max-width:1399px)"  */
 
 /***** header / .gnb *****/
+/*** header-left ***/
+/*** logo ***/
+/*** header-right ***/
+
+
+header {}
+
+
+
+/***** main / .main-container *****/
+/* warp */
+.wrap {}
+
+/***** main-visual *****/
+/*** main-visual-video ***/
+
+
+/***** main-new *****/
+/*** main-section_title ***/
+/*** main-new-01 ***/
+/*** main-new-list-wrap ***/
+/*** swiper-navigation ***/
+
+/***** main-wear *****/
+/*** main-wear-colgroup ***/
+/*** main-wear_bg-wrap ***/
+/*** main-wear_content ***/
+/*** main-wear_content-inner ***/
+/*** main-wear_content-title ***/
+/*** main-wear_content-desc ***/
+
+/***** main-popup *****/
+/*** main-popup-title-item ***/
+/*** main-popup-title-highlight ***/
+/*** main-popup-slider ***/
+/*** main-popup-slider-item ***/
+/*** main-popup-colgroup ***/
+/*** main-popup_first ***/
+/*** main-popup-last ***/
+/*** swiper-control ***/
+/*** main-popup_txt ***/
+/*** main-popup_pop-btn ***/
+
+/*** main-popup-slider-index ***/
+/*** swiper-notification ***/
+
+/***** main-news *****/
+/*** main-news_banner ***/
+/*** main-news_banner-bg-wrap ***/
+/*** main-news_banner-content ***/
+/*** main-news_banner-title ***/
+/*** main-news_banner-desc ***/
+
+/***** main-slogan *****/
+/*** marquee-wrap ***/
+/*** marquee ***/
+/*** marquee-inner ***/
+
+
+/***** main-store *****/
+/*** main-store_slider ***/
+/*** swiper-wrapper ***/
+/*** main-store_slider-item ***/
+/*** main-store_content ***/
+/*** main-store_content-inner ***/
+/*** main-store_title ***/
+/*** main-store-keyword-wrap ***/
+/*** main-store_keyword ***/
+/*** main-store_keyword-item ***/
+/*** main-store_desc-wrap ***/
+/*** main-store_desc ***/
+/*** main-store_last ***/
+/*** main-store_nav ***/
+
+
+/***** main-insta *****/
+/*** main-insta_title ***/
+/*** main-insta_txt ***/
+/*** main-insta_list-wrap ***/
+/*** main-insta_list ***/
+/*** main-insta_list-item ***/
+/*** main-insta_list-figure ***/
+
+/***** footer *****/
+/*** footer-inner ***/
+/*** footer-top ***/
+/*** footer-newsletter ***/
+/*** footer-newsletter-desc ***/
+/*** footer-extend ***/
+/*** footer-menu-container ***/
+/*** footer-menu ***/
+/*** footer-menu-group ***/
+/*** footer-menu-title ***/
+/*** footer-menu-list ***/
+/*** footer-sns-container ***/
+/*** footer-sns ***/
+/*** footer-sns-instagram ***/
+/*** footer-sns-weibo ***/
+/*** footer-sns-facebook ***/
+
+/*** footer-copyright ***/
+
+
+
+
 
