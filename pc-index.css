@@ -2,3 +2,55 @@
 /* media="(min-width:1400px)"  */
 
 /***** header / .gnb *****/
+/*** header-left ***/
+/*** logo ***/
+/*** header-right ***/
+
+
+header {}
+header .gnb {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .gnb .header-left {
+    display: flex;
+}
+header .gnb .header-left li {
+    font-size: var(--font-size-ml);
+    text-transform: uppercase;
+    text-align: center;
+}
+header .gnb .header-left li a {
+    display: block;
+    width: 130px;
+}
+header .logo {}
+header .logo a {}
+header .logo a img {
+    width: 320px; 
+}
+
+header .gnb .header-right {
+    display: flex;
+}
+header .gnb .header-right li {}
+header .gnb .header-right li a {
+    display: block;
+    width: 42px; 
+    /* line-height: 42px; */
+}
+header .gnb .header-right li a img {
+    width: 24px; height: 24px;
+}
+header .gnb .header-right .m-menu { display: none;}
+header .gnb .header-right .user { display: block;}
+
+/***** main / .main-container *****/
+/* warp */
+.wrap {
+    /* max-width: inherit; */
+    /* margin: 0 40rem; */
+}
