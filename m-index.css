@@ -244,6 +244,46 @@ header .gnb .header-right .user { display: none;}
 /*** main-news_banner-content ***/
 /*** main-news_banner-title ***/
 /*** main-news_banner-desc ***/
+.main-container .main-news {}
+.main-container .main-news .wrap {
+
+}
+.main-container .main-news .wrap .main-news_bg {
+    text-align: center;
+    background: url(./assets/images/main-news_banner-bg.png) no-repeat 65% / cover;
+    /* height: 550px; */
+    height: 70vh;
+    color: var(--color-white1);
+    text-shadow: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;    
+}
+.main-container .main-news .wrap .main-news_bg .main-news_banner-content {}
+.main-container .main-news .wrap .main-news_bg .main-news_banner-content .main-news_banner-title {
+    font-size: var(--font-size-xxl);
+    font-weight: 500;
+}
+
+.main-container .main-news .wrap .main-news_bg .main-news_banner-content .main-news_banner-title .newline::after{
+    content: "\A"; /* 줄 바꿈을 의미하는 특수 문자 */
+    white-space: pre; /* 줄 바꿈을 적용하기 위해 필요 */
+}
+
+.main-container .main-news .wrap .main-news_bg .main-news_banner-content .main-news_banner-desc {
+    font-size: var(--font-size-ms);
+    padding: 0.5rem;
+    letter-spacing: 0.05rem;
+    display: none;
+}
+.main-container .main-news .wrap .main-news_bg .main-news_banner-content .btn {
+    display: block;
+    font-size: var(--font-size-m);
+    padding: 1rem 0 5rem 0;
+
+}
+
 
 
 /***** main-slogan *****/
