@@ -504,33 +504,6 @@ header .gnb .header-right .user { display: none;}
 }
 
 
-.main-store .swiper-button-prev,
-.main-store .swiper-button-next {
-    color: #fff; /* 화살표 색상 */
-    position: absolute; /* 정확한 위치 설정 */
-    top: 50%; /* 수직 중앙 정렬 */
-    transform: translateY(-50%); /* 수직 중앙 보정 */
-    z-index: 10; /* 버튼이 슬라이드 위에 표시되도록 설정 */
-}
-
-.main-store .swiper-button-prev {
-    left: 10px; /* 왼쪽 간격 */
-}
-
-.main-store .swiper-button-next {
-    right: 10px; /* 오른쪽 간격 */
-}
-
-  
-
-
-  
-  .storeBg1 { background: url('./assets/images/store_slider-item1.png') no-repeat center/cover; }
-  .storeBg2 { background: url('./assets/images/store_slider-item2.png') no-repeat center/cover; }
-  .storeBg3 { background: url('./assets/images/store_slider-item3.png') no-repeat center/cover; }
-  .storeBg4 { background: url('./assets/images/store_slider-item4.png') no-repeat center/cover; }
-  .storeBg5 { background: url('./assets/images/store_slider-item5.png') no-repeat center/cover; }
-
   
 /***** main-insta *****/
 
