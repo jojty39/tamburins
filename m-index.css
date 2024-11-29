@@ -9,7 +9,18 @@
 /*** header-right ***/
 
 
-header {}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-white1); /* 헤더 배경색 */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid var(--color-white2);
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out; /* 부드러운 전환 */
+}
 header .gnb {
     width: 98%;
     margin: 0 auto;
@@ -20,15 +31,8 @@ header .gnb {
 header .gnb .header-left {
     display: none;
 }
-header .gnb .header-left li {
-    /* font-size: var(--font-size-ml); */
-    /* text-transform: uppercase; */
-    /* text-align: center; */
-}
-header .gnb .header-left li a {
-    /* display: block; */
-    /* width: 130px; */
-}
+header .gnb .header-left li {}
+header .gnb .header-left li a {}
 header .logo {}
 header .logo a {}
 header .logo a img {
@@ -166,6 +170,12 @@ header .gnb .header-right .user { display: none;}
     color: var(--color-gray2);
     font-size: var(--font-size-ms);
 }
+
+
+
+
+
+
 
 /***** main-wear *****/
 .main-container .main-wear {} 
@@ -439,7 +449,7 @@ header .gnb .header-right .user { display: none;}
   }
   
 
-/***** main-store *****/
+/***** main-store 기존작성*****/ 
 .main-container .main-store {
     margin-top: 0px;
     overflow: hidden;
@@ -452,7 +462,7 @@ header .gnb .header-right .user { display: none;}
     color: var(--color-white1);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 5);
     text-align: center;
-    /* height: 550px; */
+
     height: 100vh;
     width: 100%;
     display: flex;
@@ -466,13 +476,13 @@ header .gnb .header-right .user { display: none;}
 }
 .main-container .main-store .main-store_wrap .main-store_banner .main-store_banner-title .newline {}
 .main-container .main-store .main-store_wrap .main-store_banner .main-store_banner-title .newline::after{
-    content: "\A"; /* 줄 바꿈을 의미하는 특수 문자 */
-    white-space: pre; /* 줄 바꿈을 적용하기 위해 필요 */
+    content: "\A";
+    white-space: pre;
 }
 .main-container .main-store .main-store_wrap .main-store_banner .main-store_banner-desc {
     font-size: var(--font-size-ml);
     font-weight: 500;
-    /* padding: 0.5rem; */
+
     letter-spacing: 0.05rem;
     padding: 1rem 0 8rem 0;
 }
@@ -494,7 +504,34 @@ header .gnb .header-right .user { display: none;}
 }
 
 
+.main-store .swiper-button-prev,
+.main-store .swiper-button-next {
+    color: #fff; /* 화살표 색상 */
+    position: absolute; /* 정확한 위치 설정 */
+    top: 50%; /* 수직 중앙 정렬 */
+    transform: translateY(-50%); /* 수직 중앙 보정 */
+    z-index: 10; /* 버튼이 슬라이드 위에 표시되도록 설정 */
+}
 
+.main-store .swiper-button-prev {
+    left: 10px; /* 왼쪽 간격 */
+}
+
+.main-store .swiper-button-next {
+    right: 10px; /* 오른쪽 간격 */
+}
+
+  
+
+
+  
+  .storeBg1 { background: url('./assets/images/store_slider-item1.png') no-repeat center/cover; }
+  .storeBg2 { background: url('./assets/images/store_slider-item2.png') no-repeat center/cover; }
+  .storeBg3 { background: url('./assets/images/store_slider-item3.png') no-repeat center/cover; }
+  .storeBg4 { background: url('./assets/images/store_slider-item4.png') no-repeat center/cover; }
+  .storeBg5 { background: url('./assets/images/store_slider-item5.png') no-repeat center/cover; }
+
+  
 /***** main-insta *****/
 
 .main-container .main-insta { margin-top: 100px; }

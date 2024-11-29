@@ -22,15 +22,19 @@
 <!-- 멀티페이지웹에서 성능 최적화를 고려한다면 link, 관리를 고려한다면 @import -->
 <!-- reset -->
 <link rel="stylesheet" href="./assets/styles/reset.min.css">
+<link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css">
+
+
 <!-- 공통 global style -->
 <link rel="stylesheet" href="./assets/styles/common.css">
-<!-- layout: header, footer -->
-<!-- <link rel="stylesheet" href="assets/styles/layout.css"> -->
-<!-- layout: 현재페이지(index.html) style -->
-<!-- <link rel="stylesheet" href="./m-index.css"> -->
+
 <link rel="stylesheet" href="./m-index.css">
-<!-- <link rel="stylesheet" href="./pc-index.css">  -->
 <link rel="stylesheet" media="(min-width:1400px)"  href="./pc-index.css">
+
+
+<script src="./assets/scripts/jquery-3.7.1.min.js"></script>
+<script src="./assets/scripts/swiper-bundle.min.js"></script>
+<script defer src="./index.js"></script>
 </head>
 
 <body>
@@ -70,7 +74,7 @@
                       
         <div class="main-new">
             <div class="wrap">
-                <h2 class="main-section_title">Discover<span class="newline"></span>our ( New ) Collection</h2>
+                <h2 class="main-section_title">Discover <span class="newline"></span>our ( New ) Collection</h2>
                 
                 <div class="main-new-01">
                     <div class="main-new-bg">
@@ -152,11 +156,11 @@
                         
                         <div class="swiper-navigation">
                             <div class="swiper-button swiper-button-prev">
-                                <div class="icon">이전</div>
+                                <div class="icon"></div>
                             </div><!-- .swiper-button-prev -->
                             
                             <div class="swiper-button swiper-button-next">
-                                <div class="icon">다음</div>
+                                <div class="icon"></div>
                             </div><!-- .swiper-button-next -->
                         </div><!-- .swiper_navigation -->
                     </div><!-- global-product-list -->
@@ -267,22 +271,21 @@
 
                     <!-- PC ver -->
                     <div class="main-popup-slider-inner-PC">
-
-                        <div class="main-popup-slider-item item1">
+                        <div class="main-popup-slider-item item1 active">
                             <ul class="main-popup-slider-index-first popupBg1-1">
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
-                                    <h4 class="main-popup-slider-index-title">카 디퓨저 <span class="circle"></span> </h4>
+                                <li class="item1-1">
+                                    <p class="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
+                                    <h4 class="main-popup-slider-index-title">카 디퓨저 &nbsp;<span class="circle"></span></h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
+                                <li class="item2-1">
+                                    <p class="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
                                     <h4 class="main-popup-slider-index-title">토일렛 프래그런스</h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
+                                <li class="item3-1">
+                                    <p class="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
                                     <h4 class="main-popup-slider-index-title">하베스트 퍼퓸 비누</h4>
                                 </li>
-                                <li>
+                                <li class="box4">
                                     <p class="main-popup-slider-index-subtitle">확장된 퍼퓸의 페르소나</p>
                                     <h4 class="main-popup-slider-index-title">퍼퓸 밤</h4>
                                 </li>
@@ -295,19 +298,19 @@
                         </div>
                         <div class="main-popup-slider-item item2">
                             <ul class="main-popup-slider-index-first popupBg2-1">
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
+                                <li class="item1-1">
+                                    <p class="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
                                     <h4 class="main-popup-slider-index-title">카 디퓨저</h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
-                                    <h4 class="main-popup-slider-index-title">토일렛 프래그런스</h4>
+                                <li class="item2-1">
+                                    <p class="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
+                                    <h4 class="main-popup-slider-index-title">토일렛 프래그런스 &nbsp;<span class="circle"></span></h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
+                                <li class="item3-1">
+                                    <p class="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
                                     <h4 class="main-popup-slider-index-title">하베스트 퍼퓸 비누</h4>
                                 </li>
-                                <li>
+                                <li class="item4-1">
                                     <p class="main-popup-slider-index-subtitle">확장된 퍼퓸의 페르소나</p>
                                     <h4 class="main-popup-slider-index-title">퍼퓸 밤</h4>
                                 </li>
@@ -320,19 +323,19 @@
                         </div>
                         <div class="main-popup-slider-item item3">
                             <ul class="main-popup-slider-index-first popupBg3-1">
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
+                                <li class="item1-1">
+                                    <p class="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
                                     <h4 class="main-popup-slider-index-title">카 디퓨저</h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
+                                <li class="item2-1">
+                                    <p class="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
                                     <h4 class="main-popup-slider-index-title">토일렛 프래그런스</h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
-                                    <h4 class="main-popup-slider-index-title">하베스트 퍼퓸 비누</h4>
+                                <li class="item3-1">
+                                    <p class="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
+                                    <h4 class="main-popup-slider-index-title">하베스트 퍼퓸 비누 &nbsp;<span class="circle"></span></h4>
                                 </li>
-                                <li>
+                                <li class="item4-1">
                                     <p class="main-popup-slider-index-subtitle">확장된 퍼퓸의 페르소나</p>
                                     <h4 class="main-popup-slider-index-title">퍼퓸 밤</h4>
                                 </li>
@@ -345,21 +348,21 @@
                         </div>
                         <div class="main-popup-slider-item item4">
                             <ul class="main-popup-slider-index-first popupBg4-1">
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
+                                <li class="item1-1">
+                                    <p class="main-popup-slider-index-subtitle">일상의 여정에 감각적인 경험</p>
                                     <h4 class="main-popup-slider-index-title">카 디퓨저</h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
+                                <li class="item2-1">
+                                    <p class="main-popup-slider-index-subtitle">방해받고 싶지 않은 순간</p>
                                     <h4 class="main-popup-slider-index-title">토일렛 프래그런스</h4>
                                 </li>
-                                <li>
-                                    <p lass="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
+                                <li class="item3-1">
+                                    <p class="main-popup-slider-index-subtitle">작물을 수확할 때의 기쁨</p>
                                     <h4 class="main-popup-slider-index-title">하베스트 퍼퓸 비누</h4>
                                 </li>
-                                <li>
+                                <li class="item4-1">
                                     <p class="main-popup-slider-index-subtitle">확장된 퍼퓸의 페르소나</p>
-                                    <h4 class="main-popup-slider-index-title">퍼퓸 밤</h4>
+                                    <h4 class="main-popup-slider-index-title">퍼퓸 밤 &nbsp;<span class="circle"></span></h4>
                                 </li>
                             </ul>
                             <ul class="main-popup-slider-index-last popupBg4-2">
@@ -368,11 +371,7 @@
                                 </li>
                             </ul>
                         </div>
-
-
-                    </div><!-- .main-ingredient__slider-index -->
-
-                    <!-- <div class="swiper-notification"></div> -->
+                    </div> <!-- main-popup-slider-inner-PC -->
                 </div>
     
                 <div class="main-popup_btn-wrap">
@@ -405,33 +404,68 @@
                 </div>
             </div><!-- marquee -->
         </div>
-        
-        <div class="main-store">
 
+<!-- 원래 작성한 main-store
+        <div class="main-store">
             <div class="main-store_wrap">
                 <div class="main-store_banner storeBg1">
                     <h2 class="main-store_banner-title">Step into <span class="newline"></span>(&nbsp;&nbsp; Art&nbsp;&nbsp; ) </h2>
                     <h4 class="main-store_banner-desc">탬버린즈! 그 Inspiration의 시작</h4>
-                </div><!-- .main-store_banner-content -->
+                </div>
                 <div class="main-store_banner storeBg2">
                     <h2 class="main-store_banner-title">Step into <span class="newline"></span>(&nbsp;&nbsp; Oriental&nbsp;&nbsp; ) </h2>
                     <h4 class="main-store_banner-desc">플래그십 스토어 한남  Hannam</h4>
-                </div><!-- .main-store_banner-content -->
+                </div>
                 <div class="main-store_banner storeBg3">
                     <h2 class="main-store_banner-title">Step into <span class="newline"></span>(&nbsp;&nbsp; Garden&nbsp;&nbsp; ) </h2>
                     <h4 class="main-store_banner-desc">플래그십 스토어 성수  Seongsu</h4>
-                </div><!-- .main-store_banner-content -->
+                </div>
                 <div class="main-store_banner storeBg4">
                     <h2 class="main-store_banner-title">Step into <span class="newline"></span>(&nbsp;&nbsp; Crafts&nbsp;&nbsp; ) </h2>
                     <h4 class="main-store_banner-desc">플래그십 스토어 삼청  Samchung</h4>
-                </div><!-- .main-store_banner-content -->
+                </div>
                 <div class="main-store_banner storeBg5">
                     <h2 class="main-store_banner-title">Step into <span class="newline"></span>(&nbsp;&nbsp; Nature&nbsp;&nbsp; ) </h2>
                     <h4 class="main-store_banner-desc">플래그십 스토어 신사  Sinsa</h4>
-                </div><!-- .main-store_banner-content -->
+                </div>
             </div>
         </div>
-    
+  -->
+
+  <div class="main-store">
+    <div class="swiper-container main-store-swiper">
+      <div class="swiper-wrapper">
+        <!-- Swiper Slide -->
+        <div class="swiper-slide storeBg1">
+          <h2 class="main-store_banner-title">Step into Art</h2>
+          <h4 class="main-store_banner-desc">탬버린즈! 그 Inspiration의 시작</h4>
+        </div>
+        <div class="swiper-slide storeBg2">
+          <h2 class="main-store_banner-title">Step into Oriental</h2>
+          <h4 class="main-store_banner-desc">플래그십 스토어 한남</h4>
+        </div>
+        <div class="swiper-slide storeBg3">
+          <h2 class="main-store_banner-title">Step into Garden</h2>
+          <h4 class="main-store_banner-desc">플래그십 스토어 성수</h4>
+        </div>
+        <div class="swiper-slide storeBg4">
+          <h2 class="main-store_banner-title">Step into Crafts</h2>
+          <h4 class="main-store_banner-desc">플래그십 스토어 삼청</h4>
+        </div>
+        <div class="swiper-slide storeBg5">
+          <h2 class="main-store_banner-title">Step into Nature</h2>
+          <h4 class="main-store_banner-desc">플래그십 스토어 신사</h4>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination main-store-pagination"></div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev main-store-button-prev"></div>
+      <div class="swiper-button-next main-store-button-next"></div>
+    </div>
+  </div>
+  
+
         <div class="main-insta">
             <div class="wrap">
                 <h2 class="main-insta_title">Beauty 
@@ -596,28 +630,11 @@
         <p class="footer-copyright">© Tamburins. All rights reserved.</p>
     </footer>
 
+
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css"> -->
+    
     <script>
-
-    // main-popup 모바일 버전  
-    document.querySelectorAll('.main-popup-slider-item').forEach(item => {
-    const openBtn = item.querySelector('.open-btn');
-    const closeBtn = item.querySelector('.close-btn');
-    const firstPopup = item.querySelector('.main-popup_first');
-    const lastPopup = item.querySelector('.main-popup-last');
-
-    openBtn.addEventListener('click', (e) => {
-        e.preventDefault(); // 기본 동작 방지
-        firstPopup.style.display = 'none';
-        lastPopup.style.display = 'block';
-    });
-
-    closeBtn.addEventListener('click', (e) => {
-        e.preventDefault(); // 기본 동작 방지
-        lastPopup.style.display = 'none';
-        firstPopup.style.display = 'block';
-    });
-});
-
 
     </script>
 
