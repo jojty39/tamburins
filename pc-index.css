@@ -75,11 +75,12 @@ header .gnb .header-right .user { display: block;}
     margin-bottom: 2.5rem;
 }
 
-.main-container .main-new .wrap .main-new-01 {}
+.main-container .main-new .wrap .main-new-01 {
+    margin-bottom: 40px;
+}
 .main-container .main-new .wrap .main-new-01 .main-new-bg {
     border-radius: 8px;
     background: url(./assets/images/main-new-bg.png) no-repeat 70% / cover;
-    /* height: 550px; */
     height: 94vh;
     color: var(--color-yellow);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 5);
@@ -110,16 +111,14 @@ header .gnb .header-right .user { display: block;}
     font-size: var(--font-size-xl);
     padding: 1rem 0 6rem 0;
 }
-.main-container .main-new .wrap .main-new-01 .main-new-bg .btn span {  
-}
 
+
+/* 기존 작성한 리스트 wrap 
 .main-container .main-new .wrap .main-new-list-wrap {}
 .main-container .main-new .wrap .main-new-list-wrap .product-list {}
 .main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    /* justify-content: center; */
     overflow: hidden;
 }
 .main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item {
@@ -131,13 +130,9 @@ header .gnb .header-right .user { display: block;}
     margin: 8px;
     width: 596px;
     height: 850px;
-    /* height: 50vh; */
+  
 }
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link:hover {
-    /* content: url('./assets/images/product-list-img1-1.png'); */
-    /* transition: 0.3s ease; */
-    
-}
+
 .main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-bg {}
 .main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-img-wrap {}
 .main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-img-wrap img {
@@ -161,16 +156,133 @@ header .gnb .header-right .user { display: block;}
     font-size: var(--font-size-m);
     font-weight: 480;
 }
+*/
 
 
+.container-new {
+    overflow: visible; /* overflow 속성이 동작을 방해하지 않도록 설정 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.container-new .container-new-wrap {
+    max-width: 1800px;
+    width: 100%;
+}
+.container-new .container-new-wrap .slider-wrapper {
+    position: relative;
+}
+.container-new .container-new-wrap .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
+    color: var(--color-dark1);
+    border: none;
+    outline: none;
+    background: rgba(239, 239, 239, 0.6);
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.container-new .container-new-wrap .slider-wrapper .slide-button:hover {
+    background: var(--color-white2);
+}
+.container-new .container-new-wrap .slider-wrapper .slide-button#prev-slide {
+    left: 16px;
+    /* display: none;  #prev-slide 기본적으로 숨겨진 상태 유지하다 동작시 나타나게 처리 !! */
+}
+.container-new .container-new-wrap .slider-wrapper .slide-button#next-slide {
+    right: 16px;
+}
+
+.container-new .container-new-wrap .slider-wrapper .image-list {
+    display: grid;
+    gap: 16px;
+    /* font-size: 0; */
+    margin-bottom: 32px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(5, 1fr);
+
+    
+}
+.container-new .container-new-wrap .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+.container-new .container-new-wrap .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    border-radius: 8px;
+    width: 596px;
+    height: 850px;
+    object-fit: cover;
+    background-color: var(--color-lightPurple);
+    cursor: pointer;
+}
+.container-new .container-new-wrap .slider-wrapper .image-list .image-item img {
+    display: block; /* 이미지가 인라인 속성을 가지지 않도록 설정 */
+    max-width: 100%; /* 이미지 크기 조정 */
+    width: 596px;
+}
+
+.container-new .container-new-wrap .slider-wrapper .image-list .image-item .product-list-tit {
+    font-size: var(--font-size-l);
+    font-weight: 480;
+    padding: 0 50px 8px 50px;
+}
+.container-new .container-new-wrap .slider-wrapper .image-list .image-item .product-list-sub {
+    color: var(--color-gray2);
+    font-size: var(--font-size-m);
+    font-weight: 480;
+    padding: 0 50px 10px 50px;
+}
 
 
+.container-new .container-new-wrap .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+}
+.container-new .container-new-wrap .slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background: var(--color-white2);
+    position: relative;
+    border-radius: 4px;
+}
+.container-new .container-new-wrap .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+} 
 
-
-
-
-
-
+.container-new .container-new-wrap .slider-scrollbar .scrollbar-track .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: var(--color-gray2);
+    border-radius: inherit;
+    cursor: grab;
+}
+.container-new .container-new-wrap .slider-scrollbar .scrollbar-track .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.container-new .container-new-wrap .slider-scrollbar .scrollbar-track .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
 
 
 
@@ -492,18 +604,24 @@ header .gnb .header-right .user { display: block;}
 .main-container .main-insta .wrap .main-insta_list-wrap .main-insta_list-PC .item4 {
     grid-column: 1 / span 2;
 }
+.main-container .main-insta .wrap .main-insta_list-wrap .main-insta_list-PC .main-insta_list-item a {
 
+}
 .main-container .main-insta .wrap .main-insta_list-wrap .main-insta_list-PC .main-insta_list-item a img {
     width: 443px;
     width: 100%; 
     border-radius: 8px;
 }
+.main-container .main-insta .wrap .main-insta_list-wrap .main-insta_list-PC .main-insta_list-item a img:hover {}
 .main-container .main-insta .wrap .main-insta_list-wrap .main-insta_list-PC .item4 a {
     width: 443px; height: 443px;
     font-size: var(--font-size-xxxxl);
     text-align: center; line-height: 443px;
     text-transform: none;
     font-weight: 400;
+}
+.main-container .main-insta .wrap .main-insta_list-wrap .main-insta_list-PC .item4 a:hover {
+ color: var(--color-gray1);
 }
 
 /***** footer *****/

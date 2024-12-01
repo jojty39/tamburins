@@ -21,7 +21,77 @@ $(document).ready(function () {
 
 
 
-// new item 슬라이더 Slides per view 사용!
+// new item 슬라이더 JS 사용!
+
+const initSlider = () => {
+  const imageList = document.querySelector(".slider-wrapper .image-list");
+  const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+  const sliderScrollbar = document.querySelector(".container-new-wrap .slider-scrollbar");
+  const ScrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+  const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+  // Handle scrollbar thumb drag
+  ScrollbarThumb.addEventListener("mousedown", (e) => {
+    const startX = e.clientX;
+    const thumbPosition = ScrollbarThumb.offsetLeft;
+
+    // Update thumb position on mouse move
+    const handleMouseMove = (e) => {
+      const deltaX = e.clientX - startX;
+      const newThumbPosition = thumbPosition + deltaX;
+      const maxThumbPositon = sliderScrollbar.getBoundingClientRect().width - ScrollbarThumb.offsetWidth;
+
+      const boundedPosition = Math.max(0, Math.min(maxThumbPositon, newThumbPosition));
+      const scrollPosition = (boundedPosition / maxThumbPositon) * maxScrollLeft;
+
+      ScrollbarThumb.style.left = `${boundedPosition}px`;
+      imageList.scrollLeft = scrollPosition;
+    }
+
+    // Remove event listeners on mouse up
+    const handleMouseUp = () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+
+    } 
+
+    // Add event listeners for drag interaction
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+  });
+
+  // Slide images according to the slide button clicks 슬라이드 버튼 클릭에 따른 이미지 좌우 변경
+  slideButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // console.log(button); 버튼 작동 확인
+        const direction = button.id === "prev-slide" ? -1 : 1;
+        const scrollAmount = imageList.clientWidth * direction;
+        imageList.scrollBy({ left: scrollAmount, behavior: "smooth"});
+    });
+  });
+
+  // slideButtions 이미지 존재하지 않으면 숨겨진 상태 유지하다 동작시 나타나게 처리 !?????
+
+  const handleSlideButtons = () => {
+    slideButtons[0].style.dislpay = imageList.scrollLeft <= 0 ? "none" : "block";
+    slideButtons[1].style.dislpay = imageList.scrollLeft >= maxScrollLeft ? "none" : "block";
+  }
+
+  // Update scrollbar thumb position based on image scroll
+  const updateScrollThumbPosition = () => {
+    const scrollPosition = imageList.scrollLeft;
+    const thumbPosition = (scrollPosition / maxScrollLeft ) * (sliderScrollbar.clientWidth - ScrollbarThumb.offsetWidth);
+    ScrollbarThumb.style.left = `${thumbPosition}px`;
+  }
+
+  imageList.addEventListener("scroll", () => {
+    handleSlideButtons();
+    updateScrollThumbPosition();
+  });
+  
+}
+
+window.addEventListener("load", initSlider);
 
 
 

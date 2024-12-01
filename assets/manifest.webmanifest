@@ -1,0 +1,27 @@
+{
+    "name": "TAMBURINS",
+    "short_name": "Tamburins",
+    "description": "탬버린즈는 규정되지 않은 아름다움을 탐구하는 향 브랜드입니다.",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "./assets/images/favicon32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "./assets/images/logoWhite.png",
+        "sizes": "120x120",
+        "type": "image/png"
+      },
+      {
+        "src": "./assets/images/logoGnb.png",
+        "sizes": "320x320",
+        "type": "image/png"
+      }
+    ]
+  }
+  
