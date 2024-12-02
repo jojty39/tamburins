@@ -1,3 +1,8 @@
+// 모든 <a> 태그의 기본 동작을 막음
+$('a[href="#"]').on('click', function(event) {
+  event.preventDefault(); // 기본 동작 방지
+});
+
 
 // header 스크롤 감지에 따른 헤더 표시/숨김과 슬라이더 구현 
 $(document).ready(function () {
