@@ -65,8 +65,13 @@ header .gnb .header-right .user { display: none;}
 /***** main-visual *****/
 /*** main-visual-video ***/
 .main-container {}
-.main-container .main-visual {}
-.main-container .main-visual video {}
+.main-container .main-visual {
+    overflow: hidden;
+}
+.main-container .main-visual video {
+    object-fit: cover;
+    height: 90vh;
+}
 
 /***** main-new *****/
 /*** main-section_title ***/
@@ -124,45 +129,6 @@ header .gnb .header-right .user { display: none;}
     padding: 1rem 0 5.5rem 0;
 }
 
-/* 기존 작성한 리스트 wrap 
-.main-container .main-new .wrap .main-new-list-wrap {}
-.main-container .main-new .wrap .main-new-list-wrap .product-list {}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item {
-}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link {
-    display: block;
-    background-color: var(--color-lightPurple);
-    border-radius: 8px;
-    margin: 8px;
-    width: 300px;
-    height: 420px;
-}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-bg {}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-img-wrap {}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-img-wrap img {
-    width: 242px;
-    margin: auto;
-    display: block;
-}
-
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-content {
-    padding: 36px;
-}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-content .product-list-tit {
-    font-size: var(--font-size-m);
-    font-weight: 480;
-    padding-bottom: 0.5rem;
-}
-.main-container .main-new .wrap .main-new-list-wrap .product-list .swiper-wrapper .product-list-item .product-list-link .product-list-content .product-list-sub {
-    color: var(--color-gray2);
-    font-size: var(--font-size-ms);
-}
-*/
 
 .container-new {
     overflow: visible; /* overflow 속성이 동작을 방해하지 않도록 설정 */
@@ -251,7 +217,8 @@ header .gnb .header-right .user { display: none;}
     padding: 24px 24px 8px 24px;
 
 }
-
+/* 양옆 슬라이드 버튼 모바일 버전에서 안보이게처리!!!! */
+.slide-button { display: none; }
 
 .container-new .container-new-wrap .slider-scrollbar {
     height: 24px;
@@ -317,15 +284,6 @@ header .gnb .header-right .user { display: none;}
     
 }
 */
-
-
-
-
-
-
-
-
-
 
 
 
